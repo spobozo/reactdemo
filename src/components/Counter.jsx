@@ -6,12 +6,13 @@ const Counter = () => {
     //let countState = 77
 
     const[countState, setCountState] = useState(0)
+    const[countStateTwo, setCountStateTwo] = useState(0)
 
     function incCount() {
         setCountState(countState+1)
     }
     function incCountTwo() {
-        setCountState(countState+2)
+        setCountStateTwo(countStateTwo+2)
     }
 
 
@@ -19,6 +20,7 @@ const Counter = () => {
         <div>
             <div>{countState}</div>
             <button onClick={incCount}>+1</button>
+            <div>{countStateTwo}</div>
             <button onClick={incCountTwo}>+2</button>
         </div>
     )
